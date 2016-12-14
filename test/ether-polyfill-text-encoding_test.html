@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>ether-polyfill-text-encoding test</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../ether-polyfill-text-encoding.html">
+  </head>
+  <body>
+    <test-fixture id="basic">
+      <template>
+        <ether-polyfill-text-encoding></ether-polyfill-text-encoding>
+      </template>
+    </test-fixture>
+
+    <script>
+      suite('ether-polyfill-text-encoding', function() {
+        test('instantiating the element works', function() {
+          var element = fixture('basic');
+          assert.equal(element.is, 'ether-polyfill-text-encoding');
+        });
+      });
+    </script>
+  </body>
+</html>
